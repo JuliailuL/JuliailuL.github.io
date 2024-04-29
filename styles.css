@@ -1,6 +1,78 @@
-body 
-{
+body {
   margin: 0;
   padding: 0;
-  background-color: darkslateblue;
+  background-color: #121212;
+}
+main
+{
+    color: whitesmoke;
+    height: 100vh;
+}
+
+section
+{
+    heigt: 100vh;
+}
+
+nav 
+{
+    padding: 15px;
+}
+
+nav ul
+{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li a
+{
+    clour white;
+}
+
+section.hero
+{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+}
+
+section.hero .hero-text
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+
+.hero-text h1
+{
+    font-size: 2.5em; 
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+.hero-text h2
+{   
+    font-size: 1.4em; 
+    margin: 0;
+}
+.text-accent
+{
+    color: #fc0db0;
+}
+.text-primary
+{
+    color: #8d1cf7;
+}
+
+.hero img
+{
+    height: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    border-radius: 15px;
+    min width: 200px;
 }
