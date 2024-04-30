@@ -3,6 +3,7 @@ body {
   padding: 0;
   background-color: #121212;
 }
+
 main
 {
     color: whitesmoke;
@@ -46,6 +47,7 @@ section.hero .hero-text
     display: flex;
     flex-direction: column;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .hero-text h1
@@ -54,15 +56,23 @@ section.hero .hero-text
     margin-top: .5rem;
     margin-bottom: 1rem;
 }
+
 .hero-text h2
 {   
     font-size: 1.4em; 
     margin: 0;
 }
+
+.hero-text p
+{
+    
+}
+
 .text-accent
 {
     color: #fc0db0;
 }
+
 .text-primary
 {
     color: #8d1cf7;
@@ -70,9 +80,10 @@ section.hero .hero-text
 
 .hero img
 {
-    height: 100%;
-    max-width: 500px;
+    max-width: 400px;
     object-fit: contain;
     border-radius: 15px;
     min width: 200px;
+    min width: 100%;
 }
+
