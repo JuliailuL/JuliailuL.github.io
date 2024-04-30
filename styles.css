@@ -12,7 +12,7 @@ main
 
 section
 {
-    heigt: 100vh;
+    height: 100vh;
 }
 
 nav 
@@ -31,7 +31,7 @@ nav ul
 
 nav ul li a
 {
-    clour white;
+    color: white;
 }
 
 section.hero
@@ -65,7 +65,11 @@ section.hero .hero-text
 
 .hero-text p
 {
-    
+    font: italic;
+    background-color: rgba(0, 0, 0,0.8);
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 15px;
 }
 
 .text-accent
@@ -83,7 +87,7 @@ section.hero .hero-text
     max-width: 400px;
     object-fit: contain;
     border-radius: 15px;
-    min width: 200px;
-    min width: 100%;
+    min-width: 200px;
+    width: 100%;
 }
 
