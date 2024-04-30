@@ -54,15 +54,18 @@ section.hero .hero-text
     margin-top: .5rem;
     margin-bottom: 1rem;
 }
+
 .hero-text h2
 {   
     font-size: 1.4em; 
     margin: 0;
 }
+
 .text-accent
 {
     color: #fc0db0;
 }
+
 .text-primary
 {
     color: #8d1cf7;
