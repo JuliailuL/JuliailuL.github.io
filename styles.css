@@ -9,11 +9,13 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--back-color);
+  font-family: "Lato";
 }
 
 main {
   color: var(--primary-color);
   height: 100vh;
+  width: 100%;
   position: fixed;
   overflow: scroll;
   scrollbar-width: none;
@@ -88,11 +90,13 @@ section.hero .hero-text {
   font-size: 2.5em;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 .hero-text h2 {
   font-size: 1.4em;
   margin: 0;
+  font-weight: 300;
 }
 
 .hero-text p {
@@ -200,6 +204,7 @@ ul.timeline-items::before{
   width: 5px;
   height: 100%;
   background-color: var(--accent-color);
+  box-shadow: 0 0 3px var(--primary-color);
   left: calc(50% + 15px);
 }
 
