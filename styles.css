@@ -1,20 +1,19 @@
 :root{
-  --primary-color: #8d1cf7;
-  --accent-color: #999999;
-  --background-color: #121212;
-
+  --primary-color: #080324; 
+  --accent-color: #c71c5b;
+  --back-color: #d5d1d1; 
+  --back-color2: #b1a0a0;
+  --link-color: #0938ae;
 }
-
-
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #121212;
+  background-color: var(--back-color);
 }
 
 main {
-  color: whitesmoke;
+  color: var(--primary-color);
   height: 100vh;
 }
 
@@ -35,13 +34,14 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--link-color);
 }
 
 section.hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  place-content: center;
   gap: 20px;
 }
 
@@ -65,25 +65,31 @@ section.hero .hero-text {
 
 .hero-text p {
   font: italic;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--back-color2);
   padding: 1rem;
   margin: 2rem;
   border-radius: 15px;
-  width 40ch;
+  width: 40ch;
 }
 
 .hero-text p::before {
   content: "“";
   font-size: 2em;
-  color: #fc0db0;
+  color: var(--accent-color);
+}
+
+.hero-text p::after{
+  content: "”";
+  font-size: 2em;
+  color: var(--accent-color)
 }
 
 .text-accent {
-  color: #fc0db0;
+  color: var(--primary-color);
 }
 
 .text-primary {
-  color: #8d1cf7;
+  color: var(--primary-color);
 }
 
 .hero img {
@@ -99,13 +105,14 @@ section.skills{
   flex-direction: column;
   justify-content: center;
 }
+
 section.skills ul {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   gap: 3rem;
-
+  justify-content: center;
 }
  
 section.skills ul li {
@@ -117,12 +124,12 @@ section.skills ul li {
 
 }
 section.skills ul li .skill-shadow{
-  background-color: rgba(100, 100, 100, 0.7);
+  background-color: rgba(177, 150, 150, 0.7);
   border-radius: 1rem;
 }
 
 section.skills ul li .skill-bar{
-  background-color: red;
+  background-color: var(--back-color2);
   border-radius: 1rem;
   width: 90%;
   font-style: italic;
@@ -135,5 +142,5 @@ section.skills ul li .skill-bar{
 }
 
 .skill-bar span.value::after{
-  content: " %";
+  content: "%";
 }
