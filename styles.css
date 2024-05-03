@@ -278,6 +278,7 @@ ul.timeline-items .timeline-date{
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  box-sizing:border-box;
  }
 
  section.projects ul{
@@ -351,6 +352,8 @@ ul.timeline-items .timeline-date{
   }
   section.timeline{
     padding:0.6rem;
+    justify-content: end;
+    transform: scale(0.9);
   }
   section.timeline h2.timeline-title{
     margin: 0;
@@ -374,7 +377,7 @@ ul.timeline-items .timeline-date{
     height: 100%;
     justify-content: end;
   }
-  section.hero .hero-text p {
+  section.hero .hero-text p{
     margin: 0.5rem;
     padding: 0.5rem;
     width: 55ch;
@@ -393,6 +396,8 @@ ul.timeline-items .timeline-date{
     display: flex;
     flex-direction: row;
     max-width: 80%;
+    min-width: 100px;
+    width: 80%;
     flex-basis: auto;
     max-height: 25vh;
   }
